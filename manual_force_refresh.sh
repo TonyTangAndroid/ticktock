@@ -13,6 +13,7 @@ echo "force refreshing to:  $LATEST_TZDB"
 sed -i -e "s/${CURRENT_TZDB}/${LATEST_TZDB}/g" gradle.properties
 rm version
 rm tzdata-latest.tar.gz
-mv gradle.properties-e gradle.properties
 ./regenerateData.sh
 ./gradlew check
+sed -i -e "s/${CURRENT_TZDB}/${LATEST_TZDB}/g" gradle.properties
+mv gradle.properties-e gradle.properties
