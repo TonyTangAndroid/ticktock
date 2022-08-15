@@ -20,7 +20,7 @@ import java.util.Arrays;
 import java.util.Collection;
 
 final class GeneratedZoneIdsProvider implements ZoneIdsProvider {
-  private static final String VERSION_ID = "2022a";
+  private static final String VERSION_ID = "2022b";
 
   private static final Collection<String> ZONE_IDS =
       Arrays.asList(
@@ -473,6 +473,7 @@ final class GeneratedZoneIdsProvider implements ZoneIdsProvider {
           "Europe/Kaliningrad",
           "Europe/Kiev",
           "Europe/Kirov",
+          "Europe/Kyiv",
           "Europe/Lisbon",
           "Europe/Ljubljana",
           "Europe/London",
